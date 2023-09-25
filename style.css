@@ -71,6 +71,9 @@ body{
     font-size: var(--font-body);
     font-family: var(--font-family);
     background-color: var(--color-light-gray);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 
@@ -80,9 +83,7 @@ body{
 .container {
     border-radius: var(--border-5);
     box-shadow: 4px 4px 20px 2px var(--color-grayish-blue);
-    margin: 0 auto;
-    margin-top: 80px;
-    width: 500px;
+    width: 500px; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -180,16 +181,23 @@ body{
     color: var(--bg-top-div);
 }
 
-.block__quest h3{
+.block__quest ul{
     margin-bottom: var(--margin-10);
+    list-style-type: none;
 }
 
-.block__quest p{
+.block__quest li{
     padding-right: var(--padding-25);
     text-align: start;
     font-size: 1.1rem;
     font-weight: var(--font-400);
     line-height: 2rem;
+}
+
+
+.block__quest li:first-child{
+    font-size: 1.8rem;
+    margin-bottom: var(--margin-15);
 }
 
 footer {
