@@ -124,7 +124,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     
 }
-.suscrip__block {
+.block__suscrip {
     border-bottom-left-radius: var(--border-5);
     grid-column: 1 / 2;
     padding: var(--padding-30);    
@@ -132,32 +132,33 @@ body{
     color: var(--bg-top-div);
 }
 
-.suscrip__block h4 {
+.block__suscrip h3 {
+    font-size: 1.6rem;
     margin-bottom: var(--margin-15);
 }
-.suscrip__block--item {
+.block__suscrip--item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
 }
-.suscrip__block .price {
+.block__suscrip .price {
     font-size: 2.5rem;
     font-weight: var(--font-700);
 }
 
-.suscrip__block .month {
+.block__suscrip .month {
     font-weight: var(--font-400);
     font-size: 1.5rem;
 }
 
-.suscrip__block p:nth-child(3){
+.block__suscrip p:nth-child(3){
     font-weight: var(--font-400);
     margin-bottom: var(--margin-20);
     font-size: 1.4rem;
 }
 
-.suscrip__block button {
+.block__suscrip button {
     width: 100%;
     font-size: 1.6rem;
     font-family: var(--font-family);
@@ -171,7 +172,7 @@ body{
 
 
 
-.quest__block {
+.block__quest {
     border-bottom-right-radius: var(--border-5);
     grid-column: 2 / 4;
     padding: var(--padding-35);
@@ -179,11 +180,11 @@ body{
     color: var(--bg-top-div);
 }
 
-.quest__block h4{
+.block__quest h3{
     margin-bottom: var(--margin-10);
 }
 
-.quest__block p{
+.block__quest p{
     padding-right: var(--padding-25);
     text-align: start;
     font-size: 1.1rem;
@@ -216,15 +217,15 @@ footer {
     .block__two {
         grid-column: 1 / 3;
         grid-row: 2 / 4;
-    }
-    .suscrip__block {
+    }                                                   
+    .block__suscrip {
         padding: var(--padding-25);
         grid-column: 1 / 3;
         grid-row: 2 / 3;
         border-radius: 0;
     }
 
-    .quest__block {
+    .block__quest {
         padding-right: var(--padding-35);
         grid-column: 1 / 3;
         grid-row: 3 / 4;
